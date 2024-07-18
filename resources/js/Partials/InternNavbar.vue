@@ -11,7 +11,7 @@ import { Link } from "@inertiajs/vue3";
                     <span class="inline-flex rounded-md">
                         <button
                             type="button"
-                            class="bg-white-950 inline-flex items-center px-4 py-2 font-medium text-neutral-950 transition duration-150 ease-in-out hover:bg-neutral-400 hover:text-white focus:outline-none"
+                            class="bg-white-950 inline-flex items-center px-4 py-2 font-medium text-neutral-950 transition duration-150 ease-in-out hover:bg-neutral-300 hover:text-neutral-800 focus:outline-none"
                         >
                             Estudiantes
                             <svg
@@ -50,7 +50,7 @@ import { Link } from "@inertiajs/vue3";
                     <span class="inline-flex rounded-md">
                         <button
                             type="button"
-                            class="bg-white-950 inline-flex items-center px-4 py-2 font-medium text-neutral-950 transition duration-150 ease-in-out hover:bg-neutral-400 hover:text-white focus:outline-none"
+                            class="bg-white-950 inline-flex items-center px-4 py-2 font-medium text-neutral-950 transition duration-150 ease-in-out hover:bg-neutral-300 hover:text-neutral-800 focus:outline-none"
                         >
                             Académicos
                             <svg
@@ -80,7 +80,7 @@ import { Link } from "@inertiajs/vue3";
                     <span class="inline-flex rounded-md">
                         <button
                             type="button"
-                            class="bg-white-950 inline-flex items-center px-4 py-2 font-medium text-neutral-950 transition duration-150 ease-in-out hover:bg-neutral-400 hover:text-white focus:outline-none"
+                            class="bg-white-950 inline-flex items-center px-4 py-2 font-medium text-neutral-950 transition duration-150 ease-in-out hover:bg-neutral-300 hover:text-neutral-800 focus:outline-none"
                         >
                             Egresados
                             <svg
@@ -112,7 +112,7 @@ import { Link } from "@inertiajs/vue3";
                     <span class="inline-flex rounded-md">
                         <button
                             type="button"
-                            class="bg-white-950 inline-flex items-center px-4 py-2 font-medium text-neutral-950 transition duration-150 ease-in-out hover:bg-neutral-400 hover:text-white focus:outline-none"
+                            class="bg-white-950 inline-flex items-center px-4 py-2 font-medium text-neutral-950 transition duration-150 ease-in-out hover:bg-neutral-300 hover:text-neutral-800 focus:outline-none"
                         >
                             Transparencia TecNM
                             <svg

@@ -9,7 +9,9 @@ import GovFooter from "@/Partials/GovFooter.vue";
     <GovNavbar />
     <InternNavbar />
     <MainNavbar />
-    <slot />
+    <div class="w-full bg-neutral-50">
+        <slot />
+    </div>
     <MainFooter />
     <GovFooter />
 </template>
