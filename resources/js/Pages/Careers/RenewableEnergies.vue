@@ -1,14 +1,14 @@
 <script setup>
-import MainLayout from "@/Layouts/MainLayout.vue";
-import CareersSidebar from "@/Partials/CareersSidebar.vue";
+import MainLayout from "@/Layouts/Main/MainLayout.vue";
 import { Head } from "@inertiajs/vue3";
+import CareersSidebar from "@/Pages/Careers/Partials/CareersSidebar.vue";
 
 defineOptions({
     layout: MainLayout,
 });
 </script>
 <template>
-    <Head title="Ing. en Energías Renovables" />
+    <Head title="Ingeniería en Energías Renovables" />
     <div class="flex items-start justify-center gap-8">
         <CareersSidebar />
         <div class="w-2/3">

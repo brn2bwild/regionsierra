@@ -1,7 +1,7 @@
 <script setup>
 import { Head, Link } from "@inertiajs/vue3";
-import MainLayout from "@/Layouts/MainLayout.vue";
 import { Carousel, Navigation, Pagination, Slide } from "vue3-carousel";
+import MainLayout from "@/Layouts/Main/MainLayout.vue";
 import Tweet from "vue-tweet";
 import "vue3-carousel/dist/carousel.css";
 
@@ -15,14 +15,6 @@ const props = defineProps({
     },
     canRegister: {
         type: Boolean,
-    },
-    laravelVersion: {
-        type: String,
-        required: true,
-    },
-    phpVersion: {
-        type: String,
-        required: true,
     },
 });
 </script>

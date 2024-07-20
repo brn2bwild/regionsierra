@@ -103,6 +103,9 @@ import { Link } from "@inertiajs/vue3";
                     <DropdownLink :href="''">
                         Encuesta de egresados
                     </DropdownLink>
+                    <DropdownLink :href="''">
+                        Bolsa de trabajo
+                    </DropdownLink>
                 </template>
             </Dropdown>
         </div>

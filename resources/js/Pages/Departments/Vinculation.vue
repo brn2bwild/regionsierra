@@ -1,16 +1,16 @@
 <script setup>
 import MainLayout from "@/Layouts/Main/MainLayout.vue";
 import { Head } from "@inertiajs/vue3";
-import AboutSidebar from "@/Pages/About/Partials/AboutSidebar.vue";
+import DepartmentsSidebar from "@/Pages/Departments/Partials/DepartmentsSidebar.vue";
 
 defineOptions({
     layout: MainLayout,
 });
 </script>
 <template>
-    <Head title="Historia" />
+    <Head title="Vinculación" />
     <div class="flex items-start justify-center gap-8">
-        <AboutSidebar />
+        <DepartmentsSidebar />
         <div class="w-2/3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
             hic delectus impedit similique dolore minus eos quisquam fugit quis

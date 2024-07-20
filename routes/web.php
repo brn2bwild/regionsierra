@@ -43,31 +43,67 @@ Route::get('/manual-organizacion', function () {
 
 Route::get('/ingenieria-agronomia', function () {
     return Inertia::render('Careers/Agronomy');
-})->name('careers-agronomy');
+})->name('careers.agronomy');
 
 Route::get('/ingenieria-administracion', function () {
     return Inertia::render('Careers/Administration');
-})->name('careers-administration');
+})->name('careers.administration');
 
 Route::get('/ingenieria-bioquimica', function () {
     return Inertia::render('Careers/Biochemistry');
-})->name('careers-biochemistry');
+})->name('careers.biochemistry');
 
 Route::get('/ingenieria-electromecanica', function () {
     return Inertia::render('Careers/Electromechanics');
-})->name('careers-electromechanics');
+})->name('careers.electromechanics');
 
 Route::get('/ingenieria-industrial', function () {
     return Inertia::render('Careers/Industrial');
-})->name('careers-industrial');
+})->name('careers.industrial');
 
 Route::get('/ingenieria-informatica', function () {
     return Inertia::render('Careers/Informatics');
-})->name('careers-informatics');
+})->name('careers.informatics');
 
 Route::get('/ingenieria-energias-renovables', function () {
     return Inertia::render('Careers/RenewableEnergies');
-})->name('careers-renewable-energies');
+})->name('careers.renewable-energies');
+
+Route::get('/admision', function () {
+    return Inertia::render('Aplicants/Admission');
+})->name('aplicants.admission');
+
+Route::get('/noticias', function () {
+    return Inertia::render('Difussion/News');
+})->name('difussion.news');
+
+Route::get('/convocatorias', function () {
+    return Inertia::render('Difussion/Convocations');
+})->name('difussion.convocations');
+
+Route::get('/galeria', function () {
+    return Inertia::render('Difussion/Gallery');
+})->name('difussion.gallery');
+
+Route::get('/calendario-escolar', function () {
+    return Inertia::render('Difussion/AcademicCalendar');
+})->name('difussion.academic-calendar');
+
+Route::get('/servicios-escolares', function () {
+    return Inertia::render('Departments/AcademicServices');
+})->name('departments.academic-services');
+
+Route::get('/vinculacion', function () {
+    return Inertia::render('Departments/Vinculation');
+})->name('departments.vinculation');
+
+Route::get('/recursos-financieros', function () {
+    return Inertia::render('Departments/FinancialResources');
+})->name('departments.financial-resources');
+
+Route::get('/sistema-institucional-archivos', function () {
+    return Inertia::render('Departments/InstitutionalFileSystem');
+})->name('departments.institutional-file-system');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

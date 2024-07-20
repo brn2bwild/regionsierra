@@ -1,49 +1,50 @@
 <script setup>
-import { Link } from "@inertiajs/vue3";
-import CareerSidebarLink from "@/Components/CareerSidebarLink.vue";
+import MenuSidebarLink from '@/Components/MenuSidebarLink.vue';
+import MenuSidebar from '@/Pages/Partials/MenuSidebar.vue';
+
 </script>
 <template>
-    <div class="sticky top-10 m-8 flex w-[250px] flex-col bg-blue-950 p-4">
-        <CareerSidebarLink
+    <MenuSidebar>
+        <MenuSidebarLink
             url="/ingenieria-agronomia"
-            text="Ing. en Agronomía"
+            text="Ingeniería en Agronomía"
             :active="$page.url.includes('ingenieria-agronomia')"
         />
         <hr />
-        <CareerSidebarLink
+        <MenuSidebarLink
             url="/ingenieria-bioquimica"
-            text="Ing. Bioquímica"
+            text="Ingeniería Bioquímica"
             :active="$page.url.includes('ingenieria-bioquimica')"
         />
         <hr />
-        <CareerSidebarLink
+        <MenuSidebarLink
             url="/ingenieria-industrial"
-            text="Ing. Industrial"
+            text="Ingeniería Industrial"
             :active="$page.url.includes('ingenieria-industrial')"
         />
         <hr />
-        <CareerSidebarLink
+        <MenuSidebarLink
             url="/ingenieria-informatica"
-            text="Ing. Informática"
+            text="Ingeniería Informática"
             :active="$page.url.includes('ingenieria-informatica')"
         />
         <hr />
-        <CareerSidebarLink
+        <MenuSidebarLink
             url="/ingenieria-administracion"
-            text="Ing. en Administración"
+            text="Ingeniería en Administración"
             :active="$page.url.includes('ingenieria-administracion')"
         />
         <hr />
-        <CareerSidebarLink
+        <MenuSidebarLink
             url="/ingenieria-electromecanica"
-            text="Ing. Electromecánica"
+            text="Ingeniería Electromecánica"
             :active="$page.url.includes('ingenieria-electromecanica')"
         />
         <hr />
-        <CareerSidebarLink
+        <MenuSidebarLink
             url="/ingenieria-energias-renovables"
-            text="Ing. en Energías Renovables"
+            text="Ingeniería en Energías Renovables"
             :active="$page.url.includes('ingenieria-energias-renovables')"
         />
-    </div>
+    </MenuSidebar>
 </template>

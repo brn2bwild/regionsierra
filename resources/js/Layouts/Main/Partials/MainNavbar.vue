@@ -1,7 +1,5 @@
 <script setup>
-import Dropdown from "@/Components/Dropdown.vue";
 import DropdownGroup from "@/Components/DropdownGroup.vue";
-import DropdownLink from "@/Components/DropdownLink.vue";
 import DropdownItem from "@/Components/DropdownItem.vue";
 import { Link } from "@inertiajs/vue3";
 </script>
@@ -78,25 +76,25 @@ import { Link } from "@inertiajs/vue3";
             </template>
             <template #content>
                 <DropdownItem :href="'/ingenieria-agronomia'">
-                    Ing. Agronomía
+                    Ingeniería Agronomía
                 </DropdownItem>
                 <DropdownItem :href="'/ingenieria-bioquimica'">
-                    Ing. Bioquímica
+                    Ingeniería Bioquímica
                 </DropdownItem>
                 <DropdownItem :href="'/ingenieria-industrial'">
-                    Ing. Industrial
+                    Ingeniería Industrial
                 </DropdownItem>
                 <DropdownItem :href="'/ingenieria-informatica'">
-                    Ing. Informática
+                    Ingeniería Informática
                 </DropdownItem>
                 <DropdownItem :href="'/ingenieria-administracion'">
-                    Ing. Administración
+                    Ingeniería Administración
                 </DropdownItem>
                 <DropdownItem :href="'/ingenieria-electromecanica'">
-                    Ing. Electromecánica
+                    Ingeniería Electromecánica
                 </DropdownItem>
                 <DropdownItem :href="'/ingenieria-energias-renovables'">
-                    Ing. Energías Renovables
+                    Ingeniería Energías Renovables
                 </DropdownItem>
             </template>
         </DropdownGroup>
@@ -124,7 +122,7 @@ import { Link } from "@inertiajs/vue3";
                 </span>
             </template>
             <template #content>
-                <DropdownItem :href="''"> Admisión </DropdownItem>
+                <DropdownItem :href="'/admision'"> Admisión </DropdownItem>
             </template>
         </DropdownGroup>
         <Link
@@ -156,11 +154,14 @@ import { Link } from "@inertiajs/vue3";
                 </span>
             </template>
             <template #content>
-                <DropdownItem :href="''"> Avisos </DropdownItem>
-                <DropdownItem :href="''"> Convocatorias </DropdownItem>
-                <DropdownItem :href="''"> Galería </DropdownItem>
-                <DropdownItem :href="''"> Calendario escolar </DropdownItem>
-                <DropdownItem :href="''"> Bolsa de trabajo </DropdownItem>
+                <DropdownItem :href="'/noticias'"> Noticias </DropdownItem>
+                <DropdownItem :href="'/convocatorias'">
+                    Convocatorias
+                </DropdownItem>
+                <DropdownItem :href="'/galeria'"> Galería </DropdownItem>
+                <DropdownItem :href="'/calendario-escolar'">
+                    Calendario Escolar
+                </DropdownItem>
             </template>
         </DropdownGroup>
         <DropdownGroup>
@@ -187,10 +188,18 @@ import { Link } from "@inertiajs/vue3";
                 </span>
             </template>
             <template #content>
-                <DropdownItem :href="''"> Servicios escolares </DropdownItem>
-                <DropdownItem :href="''"> Vinculación </DropdownItem>
-                <DropdownItem :href="''"> Recursos financieros </DropdownItem>
-                <DropdownItem :href="''"> Sis. Inst. Archivos</DropdownItem>
+                <DropdownItem :href="'/servicios-escolares'">
+                    Servicios escolares
+                </DropdownItem>
+                <DropdownItem :href="'/vinculacion'">
+                    Vinculación
+                </DropdownItem>
+                <DropdownItem :href="'/recursos-financieros'">
+                    Recursos financieros
+                </DropdownItem>
+                <DropdownItem :href="'/sistema-institucional-archivos'">
+                    Sistema Institucional Archivos</DropdownItem
+                >
             </template>
         </DropdownGroup>
     </nav>
