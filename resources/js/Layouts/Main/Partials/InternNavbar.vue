@@ -4,7 +4,7 @@ import DropdownLink from "@/Components/DropdownLink.vue";
 import { Link } from "@inertiajs/vue3";
 </script>
 <template>
-    <nav class="flex w-full items-center justify-end bg-white px-10">
+    <nav class="flex w-full items-center justify-end bg-neutral-200 px-10">
         <div class="relative ms-3">
             <Dropdown align="left" width="48">
                 <template #trigger>
@@ -103,9 +103,7 @@ import { Link } from "@inertiajs/vue3";
                     <DropdownLink :href="''">
                         Encuesta de egresados
                     </DropdownLink>
-                    <DropdownLink :href="''">
-                        Bolsa de trabajo
-                    </DropdownLink>
+                    <DropdownLink :href="''"> Bolsa de trabajo </DropdownLink>
                 </template>
             </Dropdown>
         </div>

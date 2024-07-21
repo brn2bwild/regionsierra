@@ -1,10 +1,16 @@
 <script setup>
 import { faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { Link } from "@inertiajs/vue3";
 </script>
 <template>
-    <footer class="flex h-80 w-full justify-center bg-[#0C231E] py-10 gap-20">
-        <div>logo</div>
+    <footer class="flex h-80 w-full justify-center gap-20 bg-[#0C231E] py-10">
+        <Link href=""
+            ><img
+                class="w-60"
+                src="https://framework-gb.cdn.gob.mx/landing/img/logoheader.svg"
+                alt="logo-gob-mexico"
+        /></Link>
         <div class="flex w-1/6 flex-col text-white">
             <a href="">Enlaces</a>
             <a href="">Participa</a>
@@ -31,10 +37,16 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
             <span class="text-xl">Síguenos en</span>
             <div class="flex justify-start gap-4">
                 <a href="">
-                    <FontAwesomeIcon :icon="faFacebook" class="text-white text-3xl" />
+                    <FontAwesomeIcon
+                        :icon="faFacebook"
+                        class="text-3xl text-white"
+                    />
                 </a>
                 <a href="">
-                    <FontAwesomeIcon :icon="faTwitter" class="text-white text-3xl" />
+                    <FontAwesomeIcon
+                        :icon="faTwitter"
+                        class="text-3xl text-white"
+                    />
                 </a>
             </div>
         </div>
