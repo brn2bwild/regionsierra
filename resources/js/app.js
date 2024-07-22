@@ -9,7 +9,7 @@ import { ZiggyVue } from "../../vendor/tightenco/ziggy";
 const appName = "TecNM Campus de la Región Sierra";
 
 createInertiaApp({
-    title: (title) => `${title} - ${appName}`,
+    title: (title) => `${title} | ${appName}`,
     resolve: (name) =>
         resolvePageComponent(
             `./Pages/${name}.vue`,

@@ -36,19 +36,43 @@ import { Link } from "@inertiajs/vue3";
                 </span>
             </template>
             <template #content>
-                <DropdownItem :href="'/historia'">Historia</DropdownItem>
-                <DropdownItem :href="'/filosofia'">Filosofía</DropdownItem>
-                <DropdownItem :href="'/directorio'">Directorio</DropdownItem>
-                <DropdownItem :href="'/organigrama'">Organigrama</DropdownItem>
-                <DropdownItem :href="'/programa-institucional'"
-                    >Programa Institucional</DropdownItem
-                >
-                <DropdownItem :href="'/decreto-creacion'"
-                    >Decreto de Creación</DropdownItem
-                >
-                <DropdownItem :href="'/manual-organizacion'"
-                    >Manual de Organización</DropdownItem
-                >
+                <div class="bg-blue-950">
+                    <DropdownItem
+                        class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"
+                        :href="'/historia'"
+                        >Historia</DropdownItem
+                    >
+                    <DropdownItem
+                        class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"
+                        :href="'/filosofia'"
+                        >Filosofía</DropdownItem
+                    >
+                    <DropdownItem
+                        class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"
+                        :href="'/directorio'"
+                        >Directorio</DropdownItem
+                    >
+                    <DropdownItem
+                        class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"
+                        :href="'/organigrama'"
+                        >Organigrama</DropdownItem
+                    >
+                    <DropdownItem
+                        class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"
+                        :href="'/programa-institucional'"
+                        >Programa Institucional</DropdownItem
+                    >
+                    <DropdownItem
+                        class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"
+                        :href="'/decreto-creacion'"
+                        >Decreto de Creación</DropdownItem
+                    >
+                    <DropdownItem
+                        class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"
+                        :href="'/manual-organizacion'"
+                        >Manual de Organización</DropdownItem
+                    >
+                </div>
             </template>
         </DropdownGroup>
         <DropdownGroup>
@@ -75,27 +99,50 @@ import { Link } from "@inertiajs/vue3";
                 </span>
             </template>
             <template #content>
-                <DropdownItem :href="'/ingenieria-agronomia'">
-                    Ingeniería Agronomía
-                </DropdownItem>
-                <DropdownItem :href="'/ingenieria-bioquimica'">
-                    Ingeniería Bioquímica
-                </DropdownItem>
-                <DropdownItem :href="'/ingenieria-industrial'">
-                    Ingeniería Industrial
-                </DropdownItem>
-                <DropdownItem :href="'/ingenieria-informatica'">
-                    Ingeniería Informática
-                </DropdownItem>
-                <DropdownItem :href="'/ingenieria-administracion'">
-                    Ingeniería Administración
-                </DropdownItem>
-                <DropdownItem :href="'/ingenieria-electromecanica'">
-                    Ingeniería Electromecánica
-                </DropdownItem>
-                <DropdownItem :href="'/ingenieria-energias-renovables'">
-                    Ingeniería Energías Renovables
-                </DropdownItem>
+                <div class="bg-blue-950">
+                    <DropdownItem
+                        class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"
+                        :href="'/ingenieria-agronomia'"
+                    >
+                        Ingeniería Agronomía
+                    </DropdownItem>
+                    <DropdownItem
+                        class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"
+                        :href="'/ingenieria-bioquimica'"
+                    >
+                        Ingeniería Bioquímica
+                    </DropdownItem>
+                    <DropdownItem
+                        class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"
+                        :href="'/ingenieria-industrial'"
+                    >
+                        Ingeniería Industrial
+                    </DropdownItem>
+                    <DropdownItem
+                        class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"
+                        :href="'/ingenieria-informatica'"
+                    >
+                        Ingeniería Informática
+                    </DropdownItem>
+                    <DropdownItem
+                        class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"
+                        :href="'/ingenieria-administracion'"
+                    >
+                        Ingeniería Administración
+                    </DropdownItem>
+                    <DropdownItem
+                        class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"
+                        :href="'/ingenieria-electromecanica'"
+                    >
+                        Ingeniería Electromecánica
+                    </DropdownItem>
+                    <DropdownItem
+                        class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"
+                        :href="'/ingenieria-energias-renovables'"
+                    >
+                        Ingeniería Energías Renovables
+                    </DropdownItem>
+                </div>
             </template>
         </DropdownGroup>
         <DropdownGroup>
@@ -122,7 +169,14 @@ import { Link } from "@inertiajs/vue3";
                 </span>
             </template>
             <template #content>
-                <DropdownItem :href="'/admision'"> Admisión </DropdownItem>
+                <div class="bg-blue-950">
+                    <DropdownItem
+                        class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"
+                        :href="'/admision'"
+                    >
+                        Admisión
+                    </DropdownItem>
+                </div>
             </template>
         </DropdownGroup>
         <Link
@@ -154,14 +208,32 @@ import { Link } from "@inertiajs/vue3";
                 </span>
             </template>
             <template #content>
-                <DropdownItem :href="'/noticias'"> Noticias </DropdownItem>
-                <DropdownItem :href="'/convocatorias'">
-                    Convocatorias
-                </DropdownItem>
-                <DropdownItem :href="'/galeria'"> Galería </DropdownItem>
-                <DropdownItem :href="'/calendario-escolar'">
-                    Calendario Escolar
-                </DropdownItem>
+                <div class="bg-blue-950">
+                    <DropdownItem
+                        class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"
+                        :href="'/noticias'"
+                    >
+                        Noticias
+                    </DropdownItem>
+                    <DropdownItem
+                        class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"
+                        :href="'/convocatorias'"
+                    >
+                        Convocatorias
+                    </DropdownItem>
+                    <DropdownItem
+                        class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"
+                        :href="'/galeria'"
+                    >
+                        Galería
+                    </DropdownItem>
+                    <DropdownItem
+                        class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"
+                        :href="'/calendario-escolar'"
+                    >
+                        Calendario Escolar
+                    </DropdownItem>
+                </div>
             </template>
         </DropdownGroup>
         <DropdownGroup>
@@ -188,18 +260,32 @@ import { Link } from "@inertiajs/vue3";
                 </span>
             </template>
             <template #content>
-                <DropdownItem :href="'/servicios-escolares'">
-                    Servicios escolares
-                </DropdownItem>
-                <DropdownItem :href="'/vinculacion'">
-                    Vinculación
-                </DropdownItem>
-                <DropdownItem :href="'/recursos-financieros'">
-                    Recursos financieros
-                </DropdownItem>
-                <DropdownItem :href="'/sistema-institucional-archivos'">
-                    Sistema Institucional Archivos</DropdownItem
-                >
+                <div class="bg-blue-950">
+                    <DropdownItem
+                        class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"
+                        :href="'/servicios-escolares'"
+                    >
+                        Servicios escolares
+                    </DropdownItem>
+                    <DropdownItem
+                        class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"
+                        :href="'/vinculacion'"
+                    >
+                        Vinculación
+                    </DropdownItem>
+                    <DropdownItem
+                        class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"
+                        :href="'/recursos-financieros'"
+                    >
+                        Recursos financieros
+                    </DropdownItem>
+                    <DropdownItem
+                        class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"
+                        :href="'/sistema-institucional-archivos'"
+                    >
+                        Sistema Institucional Archivos</DropdownItem
+                    >
+                </div>
             </template>
         </DropdownGroup>
     </nav>

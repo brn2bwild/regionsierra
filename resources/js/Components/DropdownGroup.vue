@@ -5,7 +5,7 @@
             <slot name="trigger" />
         </div>
         <div
-            class="absolute hidden w-48 overflow-hidden rounded-lg bg-blue-950 group-hover/dropdown:block"
+            class="absolute z-30 hidden w-48 overflow-hidden rounded-lg group-hover/dropdown:block"
         >
             <slot name="content" />
         </div>
