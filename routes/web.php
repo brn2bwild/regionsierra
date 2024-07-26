@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Models\Convocation;
+use App\Models\Update;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -74,11 +76,15 @@ Route::get('/admision', function () {
 })->name('aplicants.admission');
 
 Route::get('/noticias', function () {
-    return Inertia::render('Difussion/News');
+    return Inertia::render('Difussion/News', [
+        'updates' => Update::all()
+    ]);
 })->name('difussion.news');
 
 Route::get('/convocatorias', function () {
-    return Inertia::render('Difussion/Convocations');
+    return Inertia::render('Difussion/Convocations', [
+        'convocations' => Convocation::all(),
+    ]);
 })->name('difussion.convocations');
 
 Route::get('/galeria', function () {

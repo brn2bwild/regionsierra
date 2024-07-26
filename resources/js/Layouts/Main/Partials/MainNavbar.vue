@@ -5,7 +5,7 @@ import { Link } from "@inertiajs/vue3";
 </script>
 <template>
     <nav
-        class="sticky z-10 flex w-full items-center justify-center bg-blue-950 font-medium text-white"
+        class="sticky top-10 z-10 flex w-full items-center justify-center bg-blue-950 font-medium text-white"
     >
         <Link
             href="/"
@@ -128,7 +128,7 @@ import { Link } from "@inertiajs/vue3";
                         class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"
                         :href="'/ingenieria-administracion'"
                     >
-                        Ingeniería Administración
+                        Ingeniería en Administración
                     </DropdownItem>
                     <DropdownItem
                         class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"
@@ -140,7 +140,7 @@ import { Link } from "@inertiajs/vue3";
                         class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"
                         :href="'/ingenieria-energias-renovables'"
                     >
-                        Ingeniería Energías Renovables
+                        Ingeniería en Energías Renovables
                     </DropdownItem>
                 </div>
             </template>
@@ -220,12 +220,6 @@ import { Link } from "@inertiajs/vue3";
                         :href="'/convocatorias'"
                     >
                         Convocatorias
-                    </DropdownItem>
-                    <DropdownItem
-                        class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"
-                        :href="'/galeria'"
-                    >
-                        Galería
                     </DropdownItem>
                     <DropdownItem
                         class="bg-blue-950 text-white hover:bg-white hover:text-blue-950"

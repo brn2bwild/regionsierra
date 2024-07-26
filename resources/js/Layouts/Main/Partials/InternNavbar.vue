@@ -6,7 +6,9 @@ import DropdownItem from "@/Components/DropdownItem.vue";
 import { Link } from "@inertiajs/vue3";
 </script>
 <template>
-    <nav class="z-50 flex w-full items-center justify-end bg-neutral-100 px-10">
+    <nav
+        class="sticky top-0 z-50 flex w-full items-center justify-end bg-neutral-100 px-10"
+    >
         <DropdownGroup>
             <template #trigger>
                 <span class="inline-flex rounded-md">

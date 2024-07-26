@@ -17,12 +17,6 @@ import MenuSidebar from "@/Pages/Partials/MenuSidebar.vue";
         />
         <hr />
         <MenuSidebarLink
-            url="/galeria"
-            text="Galería"
-            :active="$page.url.includes('galeria')"
-        />
-        <hr />
-        <MenuSidebarLink
             url="/calendario-escolar"
             text="Calendario Escolar"
             :active="$page.url.includes('calendario-escolar')"
