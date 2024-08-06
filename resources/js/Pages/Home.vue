@@ -59,7 +59,7 @@ const props = defineProps({
                     class="absolute z-10 h-full w-full bg-black bg-opacity-30"
                 ></div>
                 <div
-                    class="absolute bottom-4 left-4 z-20 rounded-l-xl bg-blue-600 bg-opacity-70 p-3"
+                    class="absolute bottom-4 left-4 z-20 rounded-l-xl bg-blue-700 bg-opacity-90 p-3"
                 >
                     <span class="text-md line-clamp-3 text-white">
                         Lorem ipsum dolor, sit amet consectetur adipisicing
@@ -82,7 +82,7 @@ const props = defineProps({
                     class="absolute z-10 h-full w-full bg-black bg-opacity-30"
                 ></div>
                 <div
-                    class="absolute bottom-4 left-4 z-20 rounded-l-xl bg-blue-600 bg-opacity-70 p-3"
+                    class="absolute bottom-4 left-4 z-20 rounded-l-xl bg-blue-700 bg-opacity-90 p-3"
                 >
                     <span class="text-md line-clamp-3 text-white">
                         Lorem ipsum dolor, sit amet consectetur adipisicing
@@ -105,7 +105,7 @@ const props = defineProps({
                     class="absolute z-10 h-full w-full bg-black bg-opacity-30"
                 ></div>
                 <div
-                    class="absolute bottom-4 left-4 z-20 rounded-l-xl bg-blue-600 bg-opacity-70 p-3"
+                    class="absolute bottom-4 left-4 z-20 rounded-l-xl bg-blue-700 bg-opacity-90 p-3"
                 >
                     <span class="text-md line-clamp-3 text-white">
                         Lorem ipsum dolor, sit amet consectetur adipisicing
@@ -128,7 +128,7 @@ const props = defineProps({
                     class="absolute z-10 h-full w-full bg-black bg-opacity-30"
                 ></div>
                 <div
-                    class="absolute bottom-4 left-4 z-20 rounded-l-xl bg-blue-600 bg-opacity-70 p-3"
+                    class="absolute bottom-4 left-4 z-20 rounded-l-xl bg-blue-700 bg-opacity-90 p-3"
                 >
                     <span class="text-md line-clamp-3 text-white">
                         Lorem ipsum dolor, sit amet consectetur adipisicing

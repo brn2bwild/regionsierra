@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\ConvocationController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\UpdateController;
+use App\Http\Resources\UpdateResource;
 use App\Models\Convocation;
 use App\Models\Update;
 use Illuminate\Foundation\Application;
@@ -75,17 +78,12 @@ Route::get('/admision', function () {
     return Inertia::render('Aplicants/Admission');
 })->name('aplicants.admission');
 
-Route::get('/noticias', function () {
-    return Inertia::render('Difussion/News', [
-        'updates' => Update::all()
-    ]);
-})->name('difussion.news');
+Route::get('/noticias', [UpdateController::class, 'index'])->name('difussion.news.index');
+Route::get('/noticias/{slug}', [UpdateController::class, 'show'])->name('difussion.news.show');
 
-Route::get('/convocatorias', function () {
-    return Inertia::render('Difussion/Convocations', [
-        'convocations' => Convocation::all(),
-    ]);
-})->name('difussion.convocations');
+
+Route::get('/convocatorias', [ConvocationController::class, 'index'])->name('difussion.convocations.index');
+Route::get('/convocatiorias/{slug}', [ConvocationController::class, 'show'])->name('difussion.convocations.show');
 
 Route::get('/galeria', function () {
     return Inertia::render('Difussion/Gallery');

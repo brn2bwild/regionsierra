@@ -7,7 +7,7 @@ import MenuSidebar from "@/Pages/Partials/MenuSidebar.vue";
         <MenuSidebarLink
             url="/historia"
             text="Historia"
-            :active="$page.url.includes('Historia')"
+            :active="$page.url.includes('historia')"
         />
         <hr />
         <MenuSidebarLink

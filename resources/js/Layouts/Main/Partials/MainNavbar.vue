@@ -5,7 +5,7 @@ import { Link } from "@inertiajs/vue3";
 </script>
 <template>
     <nav
-        class="sticky top-10 z-10 flex w-full items-center justify-center bg-blue-950 font-medium text-white"
+        class="sticky top-10 z-30 flex w-full items-center justify-center bg-blue-950 font-medium text-white"
     >
         <Link
             href="/"

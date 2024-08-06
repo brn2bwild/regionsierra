@@ -6,6 +6,7 @@ use App\Filament\Resources\ConvocationResource\Pages;
 use App\Filament\Resources\ConvocationResource\RelationManagers;
 use App\Models\Convocation;
 use Filament\Forms;
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -29,6 +30,10 @@ class ConvocationResource extends Resource
                 Forms\Components\TextInput::make('title')
                     ->required()
                     ->maxLength(255),
+                SpatieMediaLibraryFileUpload::make('file')
+                    ->label('Archivo')
+                    ->acceptedFileTypes(['application/pdf'])
+                    ->maxSize(1024)
                 // Forms\Components\TextInput::make('slug')
                 //     ->required()
                 //     ->maxLength(255),

@@ -6,6 +6,7 @@ use App\Filament\Resources\UpdateResource\Pages;
 use App\Filament\Resources\UpdateResource\RelationManagers;
 use App\Models\Update;
 use Filament\Forms;
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -35,6 +36,12 @@ class UpdateResource extends Resource
                 Forms\Components\Textarea::make('content')
                     ->required()
                     ->columnSpanFull(),
+                SpatieMediaLibraryFileUpload::make('image')
+                    ->multiple()
+                    ->image()
+                    ->panelLayout('grid')
+                    ->collection('images')
+                    ->label('Imágenes')
             ]);
     }
 

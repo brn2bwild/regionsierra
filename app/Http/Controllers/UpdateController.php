@@ -2,64 +2,26 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\UpdateCollection;
+use App\Http\Resources\UpdateResource;
 use App\Models\Update;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
 class UpdateController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
-        //
+        return Inertia::render('Difussion/News/Index', [
+            'updates' => UpdateCollection::make(Update::paginate(9))
+        ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
+    public function show(Request $request)
     {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(Update $update)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Update $update)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Update $update)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Update $update)
-    {
-        //
+        return Inertia::render('Difussion/News/Show', [
+            'update' => UpdateResource::make(Update::where('slug', $request->slug)->first())
+        ]);
     }
 }

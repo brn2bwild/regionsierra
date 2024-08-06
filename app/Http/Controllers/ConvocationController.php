@@ -2,64 +2,25 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\ConvocationCollection;
+use App\Http\Resources\ConvocationResource;
 use App\Models\Convocation;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
 class ConvocationController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
-        //
+        return Inertia::render('Difussion/Convocations/Index', [
+            'convocations' => ConvocationCollection::make(Convocation::paginate(9))
+        ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
+    public function show(Request $request)
     {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(Convocation $convocation)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Convocation $convocation)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Convocation $convocation)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Convocation $convocation)
-    {
-        //
+        return Inertia::render('Difussion/Convocations/Show', [
+            'convocation' => ConvocationResource::make(Convocation::where('slug', $request->slug)->first())
+        ]);
     }
 }

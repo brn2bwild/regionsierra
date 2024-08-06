@@ -10,11 +10,6 @@ use Illuminate\Support\Str;
  */
 class UpdateFactory extends Factory
 {
-    /**
-     * Define the model's default state.
-     *
-     * @return array<string, mixed>
-     */
     public function definition(): array
     {
         $name = fake()->sentence(5, true);
