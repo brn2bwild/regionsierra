@@ -180,7 +180,7 @@ import { Link } from "@inertiajs/vue3";
             </template>
         </DropdownGroup>
         <Link
-            href=""
+            href="/certificaciones"
             class="px-4 py-2 font-medium hover:bg-white hover:text-blue-950"
             >Certificaciones</Link
         >

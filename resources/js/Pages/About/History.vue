@@ -6,6 +6,7 @@ import AboutSidebar from "@/Pages/About/Partials/AboutSidebar.vue";
 defineOptions({
     layout: MainLayout,
 });
+
 </script>
 <template>
     <Head title="Historia" />

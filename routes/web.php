@@ -11,11 +11,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/', function () {
-    // return Inertia::render('Maintenance');
-    return Inertia::render('Home', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-    ]);
+    return Inertia::render('Home');
 })->name('home');
 
 Route::get('/historia', function () {
@@ -81,6 +77,9 @@ Route::get('/admision', function () {
 Route::get('/noticias', [UpdateController::class, 'index'])->name('difussion.news.index');
 Route::get('/noticias/{slug}', [UpdateController::class, 'show'])->name('difussion.news.show');
 
+Route::get('/certificaciones', function () {
+    return Inertia::render('Certifications');
+})->name('certifications');
 
 Route::get('/convocatorias', [ConvocationController::class, 'index'])->name('difussion.convocations.index');
 Route::get('/convocatiorias/{slug}', [ConvocationController::class, 'show'])->name('difussion.convocations.show');

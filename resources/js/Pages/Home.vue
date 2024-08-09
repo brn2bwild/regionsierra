@@ -8,15 +8,6 @@ import "vue3-carousel/dist/carousel.css";
 defineOptions({
     layout: MainLayout,
 });
-
-const props = defineProps({
-    canLogin: {
-        type: Boolean,
-    },
-    canRegister: {
-        type: Boolean,
-    },
-});
 </script>
 
 <template>
